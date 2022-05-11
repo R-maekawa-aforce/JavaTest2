@@ -7,19 +7,18 @@ public class Main {
 
 		practice.printHelo();
 		practice.printRandomMessage();
-		practice.printMessage("hello");
-		practice.printMessage("hello", 3);
+		practice.printMessage("ya");
+		practice.printMessage("hello", 2);
 		practice.printRectangleArea(1.2, 1.5);
-		String b = practice.getWeatherForecast();
 
-		System.out.println(b);
-		practice.isEvenNumber(4);
+		System.out.println(practice.getWeatherForecast());
 
-		 String a = practice.getMessage("前川", true);
-		 System.out.println(a);
+		System.out.println(practice.isEvenNumber(4));
 
-		practice.getLongestString(args);
-		practice.isAdult(null);
+		System.out.println(practice.getMessage("前川", false));
+
+		Person person = new Person(null, 21);
+		System.out.println(practice.isAdult(person));
 	}
 
 }

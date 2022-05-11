@@ -13,24 +13,26 @@ public class PracticeTest8 {
 		switch (n){
 		case 0:
 			System.out.println("こんばんは");
+			break;
 
 		case 1:
 			System.out.println("こんにちは");
+			break;
 
 		default:
 			System.out.println("おはよう");
+			break;
 		}
 	}
 
 	//練習問題３
-	String printMessage(String message) {
+	void  printMessage(String message) {
 		System.out.println(message);
-		return message;
 	}
 
 	//練習問題４
 	void printMessage(String message, int count) {
-		for(int i = 1; i < count; i++) {
+		for(int i = 0; i < count; i++) {
 			System.out.println(message);
 		}
 	}
@@ -67,7 +69,8 @@ public class PracticeTest8 {
 		}else {
 			weather = "雪";
 		}
-		return day + "の天気は" + weather + "でしょう";
+		String message = (day + "の天気は" + weather + "でしょう");
+		return  message;
 	}
 
 	//練習問題７
@@ -81,22 +84,24 @@ public class PracticeTest8 {
 
 	//練習問題８
 	String getMessage(String name,boolean isKid) {
-		if(isKid = true) {
-			return "こんにちは" + name + "ちゃん";
+		String message;
+		if(isKid == true) {
+			message = ("こんにちは" + name + "ちゃん");
 		}else{
-			return "こんにちは" + name + "さん";
+			message = ("こんにちは" + name + "さん");
 		}
+		return message;
 	}
 
 	//練習問題９
-	public String getLongestString(String[] array) {
-		int number = array.length;
-		return max(number);
+	/*	public String getLongestString(String[] array) {
+			int number = array.length;
+			return max(number);
+	*/
 
-	}
-	private String max(int number) {
-		return null;
-	}
+	/*	private String max(int number) {
+			return null;
+		}*/
 	//練習問題１０
 
 	boolean isAdult(Person person) {
@@ -107,6 +112,7 @@ public class PracticeTest8 {
 		}else {
 			return false;
 		}
+
 	}
 
 }
